@@ -1,0 +1,19 @@
+###################
+# UseCUDNN5.cmake #
+###################
+
+OPTION(WITH_CUDNN5 "Vuild with CUDNN5 support?" OFF)
+
+IF(WITH_CUDNN5)
+  IF("${CMAKE_SYSTEM}" MATCHES "Linux")
+    SET(CUDNN5_ROOT "/usr/local/cudnn/v5")
+    FIND_PATH(CUDNN5_INCLUDE_DIR cudnn.h HINTS "${CUDNN5_ROOT}/include")
+    FIND_LIBRARY(CUDNN5_LIBRARY cudnn HINTS "${CUDNN5_ROOT}/lib64")
+  ELSE()
+    FIND_PATH(CUDNN5_INCLUDE_DIR cudnn.h)
+	FIND_LIBRARY(CUDNN5_LIBRARY cudnn)
+  ENDIF()
+
+  INCLUDE_DIRECTORIES(${CUDNN5_INCLUDE_DIR})
+  ADD_DEFINITIONS(-DWITH_CUDNN5)
+ENDIF()

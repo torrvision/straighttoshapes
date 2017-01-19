@@ -1,0 +1,14 @@
+build*/
+docs/
+install/
+libraries/boost_1_59_0/
+libraries/boost-setup/
+libraries/Eigen-3.2.2/
+libraries/LuaBridge-master/
+libraries/opencv*/
+libraries/*.log
+*.tags
+tags
+tests/mike/
+*.swp
+*~
