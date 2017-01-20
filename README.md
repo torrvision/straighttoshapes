@@ -234,18 +234,17 @@ $ mkdir autoencoder && cd autoencoder
 
 #### Weights for the autoencoder
 
-Next download the pre-learned models:
-The weights used to initialise the autoencoder which reduces the dimensionality of the input to 20 dimensions
+The weights used to initialise the autoencoder which reduces the dimensionality of the binary shape masks to 20 dimensions
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/autoencoder/model_20.net
 ```
 
-The weights used to initialise the autoencoder which reduces the dimensionality of the input to 50 dimensions
+The weights used to initialise the autoencoder which reduces the dimensionality of the binary shape masks to 50 dimensions
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/autoencoder/model_50.net
 ```
 
-#### Weights for the shape prediction network
+#### Weights for the core network (YOLO style regressor)
 - Shape prediction with autoencoder embeddings (20 and 50 dims)
 
 The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
