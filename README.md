@@ -270,7 +270,7 @@ $ ccmake ..
 $ luarocks install dpnn
 ```
 
-Now we are all good to try the folliwing examples:
+Now we are all good to try the following examples:
 #### In order to run STS with a 50-dim shape AE representation on an image:
 ```
 $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m test --task shapeprediction -i ./apps/vanilla/resources/2008_001122.jpg --encoding embedding --shapeparams 50 -t 0.2
