@@ -44,14 +44,11 @@ Suitable versions of the required dependencies and some of the optional
 dependencies have been included in the repository, so StraightToShapes should
 build "out of the box".
 
+#### Dependencies which are bundled with StraightToShapes repo
+
 ```
   - Boost (version 1.59.0)
     Status: Required
-
-  - CUDA (version 7.5)
-    Status: Optional (needed for GPU acceleration)
-    Default: Enabled
-    Flag: WITH_CUDA
 
   - Eigen (version 3.2.2)
     Status: Required
@@ -59,6 +56,15 @@ build "out of the box".
   - OpenCV (version 3.1.0)
     Status: Required
     Default: Enabled
+```
+
+#### Install-yourself dependencies
+
+```
+  - CUDA (version 7.5)
+    Status: Optional (needed for GPU acceleration)
+    Default: Enabled
+    Flag: WITH_CUDA
 
   - OpenMP
     Status: Optional, but recommended (needed for faster training/prediction)
@@ -67,9 +73,10 @@ build "out of the box".
     Notes: Doesn't work on Mac OS X
 
   - Torch
-    Status: Optional, but needed to use the autoencoder embeddings
+    Status: Optional but strongly recommended (to use the autoencoder embeddings for shape prediction)
     Default: Disabled
     Flag: WITH_TORCH
+    [Installation instructions](torch.ch/docs/getting-started.html)
 ```
 
 ### 1.3 Build Process
@@ -125,7 +132,7 @@ First prepare a data directory for the straighttoshapes application.
 $ mkdir path/to/straighttoshapes/data
 ```
 
-In the data directory, the vanilla application expects to find three directories:
+In the data directory, the straighttoshapes application expects to find three directories:
 ```
 $ cd path/to/straightoshapes/data
 $ mkdir models results datasets
@@ -145,29 +152,33 @@ $ cd models
 ```
 
 - Initialisation
-The weights used to initialise the network before training.
+
+The weights used to initialise the network architecture for training (pre-trained on imagenet).
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/extraction.conv.weights
 ```
 
 - Bounding box detection
-The weights trained on SBD dataset, yolo configuration file, bounding box detection, 0 parameters per shape, trained on train set.
+
+The weights trained on SBD dataset, yolo configuration file, bounding box detection, 0 parameters per shape, trained on [train.txt](https://github.com/bharath272/sds_eccv2014/blog/master/train.txt).
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-bbox-c20-sp0-train.weights
 ```
 
-- Shape detection with 16x16 masks (256 dims) to represent the shapes
+- Shape detection with 16x16 binary masks (256 dims) to represent the shapes.
+
 The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train, used to test on YouTube videos.
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-mask-c20-sp256-train.weights
 ```
 
-The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train and val.txt set, used to test on YouTube videos
+The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train and [val.txt](https://github.com/bharath272/sds_eccv2014/blog/master/val.txt) set, used to test on YouTube videos
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-mask-c20-sp256-trainval-demo.weights
 ```
 
 - Shape detection with autoencoder embeddings (20 and 50 dims)
+
 The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp50-trainval-demo.weights
