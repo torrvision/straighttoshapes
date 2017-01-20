@@ -165,7 +165,7 @@ The weights trained on SBD dataset, yolo configuration file, bounding box detect
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-bbox-c20-sp0-train.weights
 ```
 
-- Shape detection with 16x16 binary masks (256 dims) to represent the shapes.
+- Shape prediction with 16x16 binary masks (256 dims) to represent the shapes.
 
 The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train, used to test on YouTube videos.
 ```
@@ -175,18 +175,6 @@ $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd
 The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train and [val.txt](https://github.com/bharath272/sds_eccv2014/blog/master/val.txt) set, used to test on YouTube videos
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-mask-c20-sp256-trainval-demo.weights
-```
-
-- Shape detection with autoencoder embeddings (20 and 50 dims)
-
-The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
-```
-$ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp50-trainval-demo.weights
-```
-
-- The weights trained on SBD dataset, yolo configuration file, shape embedding with 20 parameters per shape, trained on train, used to test on YouTube videos
-```
-$ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp20-train.weights
 ```
 
 
@@ -243,6 +231,8 @@ $ cd path/to/straightoshapes/data/models
 $ mkdir autoencoder && cd autoencoder
 ```
 
+#### Weights for the autoencoder
+
 Next download the pre-learned models:
 The weights used to initialise the autoencoder which reduces the dimensionality of the input to 20 dimensions
 ```
@@ -253,6 +243,20 @@ The weights used to initialise the autoencoder which reduces the dimensionality 
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/autoencoder/model_50.net
 ```
+
+#### Weights for the shape prediction network
+- Shape prediction with autoencoder embeddings (20 and 50 dims)
+
+The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
+```
+$ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp50-trainval-demo.weights
+```
+
+- The weights trained on SBD dataset, yolo configuration file, shape embedding with 20 parameters per shape, trained on train, used to test on YouTube videos
+```
+$ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp20-train.weights
+```
+
 
 ***Make sure that the Torch dependency is installed*** 
 
