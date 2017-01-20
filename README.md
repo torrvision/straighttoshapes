@@ -198,15 +198,16 @@ Examples:
 $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m demo --task detection
 ```
 
-The arguments specify the location of the data directory '-d', the mode of use '-m', and the object encoding to use '--encoding'.
-The application will automatically look for the file "sbd-yolo-bbox-c20-sp0-train.weights" in the data/models/ directory.
-
-A path to a custom weights file may be provided using the '-w' option.
 A list of all the input arguments can be output by running:
 
 ```
 $ ./build/bin/apps/vanilla/vanilla --help
 ```
+
+The arguments specify the location of the data directory '-d', the mode of use '-m', and the object encoding to use '--encoding'.
+The application will automatically look for the file "sbd-yolo-bbox-c20-sp0-train.weights" in the data/models/ directory.
+
+A path to a custom weights file may be provided using the '-w' option.
 
 #### In order to run the YOLO-style bounding box detection on a single image:
 ```
