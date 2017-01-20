@@ -265,8 +265,12 @@ Turn on the WITH_TORCH flag in Cmake.
 $ cd straighttoshapes/build/
 $ ccmake ..
 ```
+***Also required is the DPNN package which can be installed as follows*** 
+```
+$ luarocks install dpnn
+```
 
-Examples:
+Now we are all good to try the folliwing examples:
 #### In order to run STS with a 50-dim shape AE representation on an image:
 ```
 $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m test --task shapeprediction -i ./apps/vanilla/resources/2008_001122.jpg --encoding embedding --shapeparams 50 -t 0.2
