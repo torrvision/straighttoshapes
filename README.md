@@ -288,7 +288,7 @@ $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m demo --t
 
 
 5. Training and evaluation
-TODO: this requires the setup of the datasets..
+TODO: this requires the setup of the datasets.
 
 
 
