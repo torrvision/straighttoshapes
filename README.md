@@ -160,7 +160,7 @@ $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/ext
 
 - Bounding box detection
 
-The weights trained on SBD dataset, yolo configuration file, bounding box detection, 0 parameters per shape, trained on [train.txt](https://github.com/bharath272/sds_eccv2014/blog/master/train.txt).
+The weights trained on SBD dataset, yolo configuration file, bounding box detection, 0 parameters per shape, trained on [train.txt](https://github.com/bharath272/sds_eccv2014/blob/master/train.txt).
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-bbox-c20-sp0-train.weights
 ```
@@ -172,7 +172,7 @@ The weights trained on SBD dataset, yolo configuration file, shape mask with 256
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-mask-c20-sp256-train.weights
 ```
 
-The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train and [val.txt](https://github.com/bharath272/sds_eccv2014/blog/master/val.txt) set, used to test on YouTube videos
+The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train and [val.txt](https://github.com/bharath272/sds_eccv2014/blob/master/val.txt) set, used to test on YouTube videos
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-mask-c20-sp256-trainval-demo.weights
 ```
