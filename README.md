@@ -258,16 +258,21 @@ $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd
 ```
 
 
-***Make sure that the Torch dependency is installed*** 
+***Make sure that the Torch dependency is installed***
+
+***Also required is the DPNN package which can be installed as follows***
+```
+$ luarocks install dpnn
+```
 
 Turn on the WITH_TORCH flag in Cmake.
 ```
 $ cd straighttoshapes/build/
 $ ccmake ..
 ```
-***Also required is the DPNN package which can be installed as follows*** 
+Then re-make
 ```
-$ luarocks install dpnn
+make
 ```
 
 Now we are all set to try the following examples:
@@ -307,10 +312,10 @@ No part of the Software may be reproduced, modified, transmitted or transferred 
 
 You are not permitted under this Licence to use this Software commercially. Use for which any financial return is received shall be defined as commercial use, and includes:
 
-1. integration of all or part of the source code or the Software into a product for sale or license by or on behalf of Licensee to third parties or 
-2. use of the Software or any derivative of it for research with the final aim of developing software products for sale or license to a third party or 
-3. use of the Software or any derivative of it for research with the final aim of developing non-software products for sale or license to a third party, or 
-4. use of the Software to provide any service to an external organisation for which payment is received. 
+1. integration of all or part of the source code or the Software into a product for sale or license by or on behalf of Licensee to third parties or
+2. use of the Software or any derivative of it for research with the final aim of developing software products for sale or license to a third party or
+3. use of the Software or any derivative of it for research with the final aim of developing non-software products for sale or license to a third party, or
+4. use of the Software to provide any service to an external organisation for which payment is received.
 
 If you are interested in using the Software commercially, please contact Torr Vision Group directly to negotiate a licence.
 
