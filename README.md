@@ -296,6 +296,13 @@ $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m demo --t
 TODO: this requires the setup of the datasets.
 
 
+6. Build Problems.
+## Build directory not created, OpenCV fails to build.
+On some systems, OpenCV will fail to build. In this case, open the file
+```
+$ gedit libraries/build-opencv-3.1.0.log
+```
+to check why it failed. If this is caused by the IPP flag, turn it off and recompile without IPP.
 
 
 # Licence
