@@ -732,14 +732,10 @@ int main(int argc, char *argv[])
   size_t subdivisions(1);
   if(args.mode == "train")
   {
-    batch = 64; subdivisions = 4;
-    if(host_name() == "mikesapi-tvg-laptop") subdivisions = 8;
-    if(host_name() == "sjvision")
-    {
-      std::cout << "Hello I'm Saumya's machine\n";
-      batch = 8;
-      subdivisions = 2;
-    }
+    batch = 64; subdivisions = 8;
+    if(host_name() == "ms-tvg-workstation"){ batch = 64; subdivisions = 4; }
+    if(host_name() == "mikesapi-tvg-laptop"){ batch = 64; subdivisions = 8; }
+    if(host_name() == "sjvision"){ batch = 8; subdivisions = 2; }
   }
 
   std::string modifiedNetworkConfigFile = create_configuration_file(args.networkConfigurationFile, batch, subdivisions, detectionSettings);
