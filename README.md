@@ -9,9 +9,9 @@ A deep convolutional network is trained to regress to the low dimensional shape 
 Our end-to-end network qualifies as the first real-time instance segmentation pipeline running at ~35FPS while yielding promising results at the task.
 Proposed top-down regression to object shape masks through a semantically defined shape space allows the network to generalize to unseen categories at test time. We call this zero-shot segmentation and evaluate the performance of our model at the task to establish a baseline for future research to be measured against.
 
-----------------------------------
 ### Results
----------------------------------
+Table and convergence plots
+
 ### Acknowledgements
 This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg).
 
@@ -32,16 +32,17 @@ If you build on this framework for your research, please consider citing the ori
 }
 ```
 
-## Installation Guide
 
-## 1. Building the System
+### Installation Guide
 
-### 1.1 Overview
+### 1. Building the System
+
+#### 1.1 Overview
 
 StraightToShapes builds with CMake 2.8 and above on Ubuntu.
 It has been tested on 14.04 and 16.04.
 
-### 1.2 Dependencies
+#### 1.2 Dependencies
 
 StraightToShapes depends on various 3rd party libraries.
 
@@ -84,7 +85,7 @@ build "out of the box".
     [Installation instructions](torch.ch/docs/getting-started.html)
 ```
 
-### 1.3 Build Process
+#### 1.3 Build Process
 
 Common steps:
 
@@ -130,8 +131,8 @@ Common steps:
      $ make -j4
      ```
 
-## 2. Preparing some data
-First prepare a data directory for the straighttoshapes application.
+### 2. Preparing some data
+Prepare a data directory for the straighttoshapes application as follows:
 
 ```
 $ mkdir path/to/straighttoshapes/data
@@ -183,7 +184,7 @@ $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd
 ```
 
 
-## 3. Running the System
+### 3. Running the System
 
 The build process will build various applications, libraries and test
 programs in <root>/straighttoshapes/build. The main application can be found at:
@@ -229,7 +230,7 @@ $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m test --t
 $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m demo -v /path/to/video/file.mp4 --task shapeprediction
 ```
 
-## 4. Running the System with the learned embeddings
+### 4. Running the System with the learned embeddings
 
 Go back to the models directory created previously, and create a new directory called autoencoder:
 ```
@@ -302,7 +303,7 @@ TODO: this requires the setup of the datasets.
 
 
 6. Build Problems.
-## Build directory not created, OpenCV fails to build.
+#### Build directory not created, OpenCV fails to build.
 On some systems, OpenCV will fail to build. In this case, open the file
 ```
 $ gedit libraries/build-opencv-3.1.0.log
@@ -310,7 +311,7 @@ $ gedit libraries/build-opencv-3.1.0.log
 to check why it failed. If this is caused by the IPP flag, turn it off and recompile without IPP.
 
 
-# Licence
+### Licence
 
 StraightToShapes © 2016, Torr Vision Group, The University of Oxford (the "Software")
 
