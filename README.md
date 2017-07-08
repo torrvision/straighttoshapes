@@ -1,6 +1,6 @@
 ## Straight To Shapes: Real-Time Detection of Encoded Shapes
 
-<img src="visual_pipeline.png" width="750">
+<img src="visual_pipeline.png" width="700">
 
 *Project page:* [http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes](http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/index.php)
 
@@ -8,15 +8,13 @@
 A deep convolutional network is trained to regress to the low dimensional shape vectors which are then mapped to shape masks using the decoder half of the autoencoder.
 Our end-to-end network qualifies as the first real-time instance segmentation pipeline running at ~35FPS while yielding promising results at the task.
 Proposed top-down regression to object shape masks through a semantically defined shape space allows the network to generalize to unseen categories at test time. We call this zero-shot segmentation and evaluate the performance of our model at the task to establish a baseline for future research to be measured against.
-
 ----------------------------------
-Results
+###Results
 ---------------------------------
+###Acknowledgements
 This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg).
 
 It is built on top of [Darknet](https://github.com/pjreddie/darknet), an open-source neural network framework developed by [Joseph Redmon](http://pjreddie.com/).
-
-## Publications
 
 If you build on this framework for your research, please consider citing the original research paper:
 ```
@@ -33,7 +31,7 @@ If you build on this framework for your research, please consider citing the ori
 }
 ```
 
-# Installation Guide
+## Installation Guide
 
 ## 1. Building the System
 
