@@ -8,11 +8,12 @@
 A deep convolutional network is trained to regress to the low dimensional shape vectors which are then mapped to shape masks using the decoder half of the autoencoder.
 Our end-to-end network qualifies as the first real-time instance segmentation pipeline running at ~35FPS while yielding promising results at the task.
 Proposed top-down regression to object shape masks through a semantically defined shape space allows the network to generalize to unseen categories at test time. We call this zero-shot segmentation and evaluate the performance of our model at the task to establish a baseline for future research to be measured against.
-...
+
+----
 
 ### Results
 Table and convergence plots
-...
+----
 
 ### Acknowledgements
 This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg).
@@ -33,7 +34,7 @@ If you build on this framework for your research, please consider citing the ori
   url       = {http://arxiv.org/abs/1611.07932},
 }
 ```
-...
+----
 
 ### Installation Guide
 
