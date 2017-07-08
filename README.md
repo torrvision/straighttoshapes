@@ -13,6 +13,7 @@ Proposed top-down regression to object shape masks through a semantically define
 
 ### Results
 
+#### Instance segmentation (table and convergence plots side-by-side)
 
 | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
 | ------------- |------------- |:-------------:|:------:|:------:|:------:| 
@@ -24,6 +25,7 @@ Proposed top-down regression to object shape masks through a semantically define
 | YOLO-BN| Embedding (20) |      |      |      |      |
 | YOLO-BN-DA | Embedding (20) |  |      |      |      |
 
+#### Zero-shot segmentation (table and qualitative ex. side-by-side)
 
 ----
 
