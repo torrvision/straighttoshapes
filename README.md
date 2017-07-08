@@ -310,5 +310,7 @@ $ gedit libraries/build-opencv-3.1.0.log
 ```
 to check why it failed. If this is caused by the IPP flag, turn it off and recompile without IPP.
 
-![License](license.md)
+
+![## License](license.md)
+
 
