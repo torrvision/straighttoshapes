@@ -13,6 +13,7 @@ Proposed top-down regression to object shape masks through a semantically define
 
 ### Results
 | Architecture  | Shape space   | Accuracy (mAP)  mAP@0.5 mAP@0.7 mAP vol | Runtime (ms)| 
+| | | | |
 | ------------- |:-------------:| --------------- |--------------------|
 | 
 | YOLO   | Binary mask |  | |
