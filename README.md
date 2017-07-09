@@ -16,10 +16,13 @@ Proposed top-down regression to object shape masks through a semantically define
 ### Results
 
 #### Instance segmentation 
-##### 1. Convergence plots 
-for different network architectures minimizing L2-regression loss over {shape, bounding-box. class-probability} prediction set. [BN: using Batch normalization, DA: using stronger Data augmentation].
+##### 1. Convergence plots for different network architectures minimizing L2-regression loss over {shape, bounding-box. class-probability} prediction set. 
+[BN: using Batch normalization, DA: using stronger Data augmentation].
 
- | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
+##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
+ 
+ <table style="float:left">
+| Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
 | ------------- |------------- |:-------------:|:------:|:------:|:------:| 
 |              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
 | YOLO   | Binary mask | 32.3 | 12.0 | 28.6 | 26.3 |
@@ -28,8 +31,9 @@ for different network architectures minimizing L2-regression loss over {shape, b
 | YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
 | YOLO-BN| Embedding (20) |      |      |      |      |
 | YOLO-BN-DA | Embedding (20) |  |      |      |      |
-
-#### Zero-shot segmentation (table and qualitative ex. side-by-side)
+</table>
+#### 3. Qualitative results
+#### Zero-shot segmentation
 
 ----
 
