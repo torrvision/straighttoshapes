@@ -39,12 +39,12 @@ Different network architectures are minimizing proxy L2-regression loss over out
 
 ##### 1. Quantitative results
  
-| Archi.| Shape space |COCO (8037 val images)|  --     | --    |
+| Archi.| Shape space |COCO (8037 val images)|      |     |
 | ------|------------ |:--------------------:|:-------:|:-----:|
 |        |                    | mAP@0.5 (all) | mAP@0.7 (large) | mAP vol (large) |
 | YOLO   | Embedding (20)     | 34.6 | 15.0 | 31.5 |
 | YOLO-BN| Embedding (20)     |      |      |      |
-| YOLO-BN-DA | Embedding (20) |  |      |      |
+| YOLO-BN-DA | Embedding (20) |      |      |      |
 
 #### 3. Qualitative results
 
