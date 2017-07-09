@@ -16,8 +16,8 @@ Proposed top-down regression to object shape masks through a semantically define
 ### Results
 
 #### Instance segmentation 
-##### 1. Convergence plots for different network architectures while minimizing L2-regression loss over output parameter set of {shape, bounding-box. class-probabilities} for the PASCAL-VOC dataset using SBD annotations and std. train/test divide.
-[BN: using Batch normalization, DA: using stronger Data augmentation].
+##### 1. Convergence plots 
+Different network architectures minimizing L2-regression loss over output parameter set of {shape, bounding-box. class-probabilities}. We use SBD annotations and std. train/test divide for the PASCAL-VOC dataset. [BN: using Batch normalization, DA: using stronger Data augmentation].
 
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
