@@ -125,7 +125,7 @@ Common steps:
      $ cd straighttoshapes
      ```
 
-#### 1.3.1 Build Process (Unix)
+#### Build Process (Unix)
 
   1. Run the top-level build script:
 
@@ -179,21 +179,21 @@ First let us populate the models directory with frequently used models by downlo
 $ cd models
 ```
 
-- Initialisation
+#### Initialisation
 
 The weights used to initialise the network architecture for training (pre-trained on imagenet).
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/extraction.conv.weights
 ```
 
-- Bounding box detection
+#### Bounding box detection
 
 The weights trained on SBD dataset, yolo configuration file, bounding box detection, 0 parameters per shape, trained on [train.txt](https://github.com/bharath272/sds_eccv2014/blob/master/train.txt).
 ```
 $ wget http://www.robots.ox.ac.uk/~scott/models/sbd-yolo-bbox-c20-sp0-train.weights
 ```
 
-- Shape prediction with 16x16 binary masks (256 dims) to represent the shapes.
+#### Shape prediction with 16x16 binary masks (256 dims) to represent the shapes.
 
 The weights trained on SBD dataset, yolo configuration file, shape mask with 256 parameters per shape, trained on train, used to test on YouTube videos.
 ```
@@ -272,10 +272,9 @@ The weights used to initialise the autoencoder which reduces the dimensionality 
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/autoencoder/model_50.net
 ```
 
-#### Weights for the core network (YOLO style regressor)
-- Shape prediction with autoencoder embeddings (20 and 50 dims)
+#### Weights for the core network (YOLO-style regressor) with 20 and 50 dim. autoencoder embeddings
 
-The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
+- The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
 ```
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/sbd-yolo-embedding-c20-sp50-trainval-demo.weights
 ```
@@ -320,11 +319,7 @@ $ ./build/bin/apps/vanilla/vanilla -d /path/to/straighttoshapes/data -m demo --t
 ```
 
 
-5. Training and evaluation
-TODO: this requires the setup of the datasets.
-
-
-6. Build Problems.
+### 6. Build Problems
 #### Build directory not created, OpenCV fails to build.
 On some systems, OpenCV will fail to build. In this case, open the file
 ```
