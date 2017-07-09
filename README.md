@@ -1,6 +1,6 @@
 ## Straight To Shapes: Real-Time Detection of Encoded Shapes
 
-<div style="text-align:center"><img src="visual_pipeline.png" width="700"></div>
+<img align="center" src="visual_pipeline.png" width="700">
 
 *Project page:* [http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes](http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/index.php)
 
