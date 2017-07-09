@@ -22,6 +22,7 @@ Proposed top-down regression to object shape masks through a semantically define
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
  <table style="float:left">
+ 
 | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
 | ------------- |------------- |:-------------:|:------:|:------:|:------:| 
 |              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
@@ -31,6 +32,7 @@ Proposed top-down regression to object shape masks through a semantically define
 | YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
 | YOLO-BN| Embedding (20) |      |      |      |      |
 | YOLO-BN-DA | Embedding (20) |  |      |      |      |
+
 </table>
 #### 3. Qualitative results
 #### Zero-shot segmentation
