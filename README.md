@@ -16,8 +16,8 @@ Proposed top-down regression to object shape masks through a semantically define
 ### Results
 
 #### Instance segmentation 
-##### 1. Convergence plots 
-Different network architectures minimizing L2-regression loss over output parameter set of {shape, bounding-box. class-probabilities}. We use SBD annotations and std. train/test divide for the PASCAL-VOC dataset. [BN: using Batch normalization, DA: using stronger Data augmentation].
+##### 1. Convergence plots of mAP score for IoU 
+Different network architectures are minimizing proxy L2-regression loss over output parameter set of {shape, bounding-box. class-probabilities}. We use SBD annotations and std. train/test divide for the PASCAL-VOC dataset. [BN: using Batch normalization, DA: using stronger Data augmentation].
 
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
@@ -28,8 +28,11 @@ Different network architectures minimizing L2-regression loss over output parame
 | YOLO   | Radial      | 30.0 | 6.5 | 29.0  | 27.1 |
 | YOLO   | Embedding (50) | 32.6 | 14.8 | 28.9 | 30.5 |
 | YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
-| YOLO-BN| Embedding (20) |      |      |      |      |
-| YOLO-BN-DA | Embedding (20) |  |      |      |      |
+| YOLO-BN| Embedding (20) | 38.6 | 17.4 | 34.3 |      |
+| YOLO-BN-DA | Embedding (20) | 42.3 | 20.8 | 36.9 |      |
+|------------|----------------|----|---|---|---|
+| [SDS](https://arxiv.org/pdf/1407.1808.pdf) | - | 49.7 | - | 41.4 | 48K |
+| [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
 #### 3. Qualitative results
 
@@ -37,15 +40,12 @@ Different network architectures minimizing L2-regression loss over output parame
 
 ##### 1. Quantitative results
  
-| Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
-| ------------- |------------- |:-------------:|:------:|:------:|:------:| 
-|              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
-| YOLO   | Binary mask | 32.3 | 12.0 | 28.6 | 26.3 |
-| YOLO   | Radial      | 30.0 | 6.5 | 29.0  | 27.1 |
-| YOLO   | Embedding (50) | 32.6 | 14.8 | 28.9 | 30.5 |
-| YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
-| YOLO-BN| Embedding (20) |      |      |      |      |
-| YOLO-BN-DA | Embedding (20) |  |      |      |      |
+| Archi.| Shape space |COCO (8037 val images)|  --     | --    |
+| ------------- |------------- |:-------------:|:------:|:------:|
+|        |                | mAP@0.5 (all) | mAP@0.7 (large) | mAP vol (large) |
+| YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 |
+| YOLO-BN| Embedding (20) |      |      |      |
+| YOLO-BN-DA | Embedding (20) |  |      |      |
 
 #### 3. Qualitative results
 
