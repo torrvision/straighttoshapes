@@ -30,7 +30,6 @@ Different network architectures are minimizing proxy L2-regression loss over out
 | YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
 | YOLO-BN| Embedding (20) | 38.6 | 17.4 | 34.3 |      |
 | YOLO-BN-DA | Embedding (20) | 42.3 | 20.8 | 36.9 |      |
-|------------|----------------|----|---|---|---|
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | - | 49.7 | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
@@ -41,10 +40,10 @@ Different network architectures are minimizing proxy L2-regression loss over out
 ##### 1. Quantitative results
  
 | Archi.| Shape space |COCO (8037 val images)|  --     | --    |
-| ------------- |------------- |:-------------:|:------:|:------:|
-|        |                | mAP@0.5 (all) | mAP@0.7 (large) | mAP vol (large) |
-| YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 |
-| YOLO-BN| Embedding (20) |      |      |      |
+| ------|------------ |:--------------------:|:-------:|:-----:|
+|        |                    | mAP@0.5 (all) | mAP@0.7 (large) | mAP vol (large) |
+| YOLO   | Embedding (20)     | 34.6 | 15.0 | 31.5 |
+| YOLO-BN| Embedding (20)     |      |      |      |
 | YOLO-BN-DA | Embedding (20) |  |      |      |
 
 #### 3. Qualitative results
