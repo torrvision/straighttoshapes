@@ -15,8 +15,9 @@ Proposed top-down regression to object shape masks through a semantically define
 
 ### Results
 
-#### Instance segmentation (table and convergence plots side-by-side)
-<p align="center">
+#### Instance segmentation 
+##### 1. Convergence plots 
+for different network architectures minimizing L2-regression loss over {shape, bounding-box. class-probability} prediction set. [BN: using Batch normalization, DA: using stronger Data augmentation].
 
  | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
 | ------------- |------------- |:-------------:|:------:|:------:|:------:| 
@@ -27,8 +28,6 @@ Proposed top-down regression to object shape masks through a semantically define
 | YOLO   | Embedding (20) | 34.6 | 15.0 | 31.5 | 28.0 |
 | YOLO-BN| Embedding (20) |      |      |      |      |
 | YOLO-BN-DA | Embedding (20) |  |      |      |      |
-
-</p>
 
 #### Zero-shot segmentation (table and qualitative ex. side-by-side)
 
@@ -260,7 +259,7 @@ $ cd path/to/straightoshapes/data/models
 $ mkdir autoencoder && cd autoencoder
 ```
 
-#### Weights for the autoencoder
+#### 4.1 Weights for the autoencoder
 
 The weights used to initialise the autoencoder which reduces the dimensionality of the binary shape masks to 20 dimensions
 ```
@@ -272,7 +271,7 @@ The weights used to initialise the autoencoder which reduces the dimensionality 
 $ wget http://www.robots.ox.ac.uk/~tvg/projects/StraightToShapes/data/models/autoencoder/model_50.net
 ```
 
-#### Weights for the core network (YOLO-style regressor) with 20 and 50 dim. autoencoder embeddings
+#### 4.2 Weights for the core network (YOLO-style regressor) with 20 and 50 dim. autoencoder embeddings
 
 - The weights trained on SBD dataset, yolo configuration file, shape embedding with 50 parameters per shape, trained on train and val set, used to test on YouTube videos
 ```
