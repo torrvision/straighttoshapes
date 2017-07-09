@@ -18,7 +18,7 @@ Proposed top-down regression to object shape masks through a semantically define
 #### Instance segmentation (table and convergence plots side-by-side)
 <p align="center">
 
-  | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
+ | Archi.| Shape space |Acc. (mAP)|  --     | --    | Runtime (ms)| 
 | ------------- |------------- |:-------------:|:------:|:------:|:------:| 
 |              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
 | YOLO   | Binary mask | 32.3 | 12.0 | 28.6 | 26.3 |
