@@ -18,7 +18,7 @@ Proposed top-down regression to object shape masks through a semantically define
 #### Instance segmentation 
 ##### 1. Convergence plots of mAP score for IoU 
 Different network architectures are minimizing proxy L2-regression loss over output parameter set of {shape, bounding-box. class-probabilities}. We use SBD annotations and std. train/test divide for the PASCAL-VOC dataset. [BN: using Batch normalization, DA: using stronger Data augmentation].
-<img src=mAP.png width='600'>
+<img src=mAP.png width='700'>
 
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
