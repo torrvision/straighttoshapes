@@ -15,7 +15,7 @@ Proposed top-down regression to object shape masks through a semantically define
 
 ### Results
 
-#### Instance segmentation 
+#### -Instance segmentation 
 ##### 1. Convergence plots of mAP scores @ 0.5 IoU 
 mAP estimates over 2000 randomly selected train and val images from SBD dataset as network architectures minimize proxy L2-regression loss over output set of {shape params, bounding-box params, class-probabilities}. 
 
@@ -40,7 +40,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 #### 3. Qualitative results
 <img src=instancesegmentation.png width='700'>
 
-#### Zero-shot segmentation
+#### -Zero-shot segmentation
 
 ##### 1. Quantitative results
  
@@ -50,7 +50,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | YOLO-BN| Embedding (20)     |             |               |               |
 | YOLO-BN-DA | Embedding (20) |             |               |               |
 
-#### 3. Qualitative results
+#### 2. Qualitative results
 
 ----
 
@@ -79,6 +79,6 @@ To install the software, follow the instructions provided [HERE](INSTALL.md).
 
 ------------------
 ### License
-This work is protected by the following license agreement: [License](LICENSE.md)
+This work is protected by a [license](LICENSE.md) agreement.
 
 
