@@ -27,15 +27,16 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | Archi.     | Shape space |mAP@0.5|mAP@0.7|mAP vol| Runtime (ms)| 
 | -----      |------------ |:-------:|:-----------:|:------:|:------:| 
 | **Ours**   |             |         |             |        |      |
-| YOLO       | Binary mask | 32.3    | 12.0        | 28.6   | 26.3 |
-| YOLO       | Radial      | 30.0    | 6.5         | 29.0   | 27.1 |
-| YOLO       | Embedding (50) | 32.6 | 14.8        | 28.9   | 30.5 |
-| YOLO       | Embedding (20) | 34.6 | 15.0        | 31.5   | 28.0 |
-| YOLO-BN    | Embedding (20) | 38.6 | 17.4        | 34.3   | 28.0 |
-| YOLO-BN-DA | Embedding (20) | 42.3 | 20.8        | 36.9   | 28.0 |
+| YOLO       | Binary mask | 32.3    | 12.0        | 28.6   | 26.3\* |
+| YOLO       | Radial      | 30.0    | 6.5         | 29.0   | 27.1\* |
+| YOLO       | Embedding (50) | 32.6 | 14.8        | 28.9   | 30.5\* |
+| YOLO       | Embedding (20) | 34.6 | 15.0        | 31.5   | 28.0\* |
+| YOLO-BN    | Embedding (20) | 38.6 | 17.4        | 34.3   | 28.0\* |
+| YOLO-BN-DA | Embedding (20) | 42.3 | 20.8        | 36.9   | 28.0\* |
 | **Others** |                |      |             |        |      |
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | -   | 49.7   | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
+\* These present the computational time of the entire application (including display and wait time for the user) not just the feed-forward prediction.
 
 #### 3. Qualitative results
 (a) Correct predictions using downsampled binary masks [YOLO-binarymask].<br/>
