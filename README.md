@@ -22,9 +22,9 @@ Different network architectures are minimizing proxy L2-regression loss over out
 
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
-| Archi.| Shape space |Acc. (mAP)|----|----| Runtime (ms)| 
-| ------------- |------------- |:-------:|------|------|:------:| 
-|              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
+| Archi.| Shape space |Acc. (mAP)|--------|--------| Runtime (ms)| 
+| ----- |------------ |:-------:|:-------:|:------:|:------:| 
+|       |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
 | **Ours** | | | | | |
 | YOLO   | Binary mask | 32.3 | 12.0 | 28.6 | 26.3 |
 | YOLO   | Radial      | 30.0 | 6.5 | 29.0  | 27.1 |
