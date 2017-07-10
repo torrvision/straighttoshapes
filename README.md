@@ -15,7 +15,8 @@ Proposed top-down regression to object shape masks through a semantically define
 
 ### Results
 
-- *Instance segmentation*
+
+- **Instance segmentation**
 ##### 1. Convergence plots of mAP scores @ 0.5 IoU 
 mAP estimates over 2000 randomly selected train and val images from SBD dataset as network architectures minimize proxy L2-regression loss over output set of {shape params, bounding-box params, class-probabilities}. 
 
@@ -38,10 +39,16 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
 
 #### 3. Qualitative results
-(a) Correct predictions using downsampled binary masks; (b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction); (c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table).
+(a) Correct predictions using downsampled binary masks
+
+(b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction) 
+
+(c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table).
 <img src=instancesegmentation.png width='700'>
 
-- *Zero-shot segmentation*
+
+
+- **Zero-shot segmentation**
 
 ##### 1. Quantitative results
  
@@ -53,7 +60,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 
 #### 2. Qualitative results
 <img src=ZSLcomparisonToStateOfTheArt.png width='700'>
-----
+
 
 ### Acknowledgements
 This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg). Additional experiments with batch normalization, data augmentation and resnet architecture have been contributed by Laurynas Miksys.
