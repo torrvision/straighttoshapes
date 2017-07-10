@@ -36,6 +36,19 @@ Different network architectures are minimizing proxy L2-regression loss over out
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | - | 49.7 | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
+| Archi.     | Shape space    | Acc. (mAP) |         |         | Runtime (ms) |
+|------------|----------------|------------|---------|---------|--------------|
+|            |                | mAP@0.5    | mAP@0.7 | mAP vol |              |
+| Ours       |                |            |         |         |              |
+| YOLO       | Binary mask    | 32.3       | 12.0    | 28.6    | 26.3         |
+| YOLO       | Radial         | 30.0       | 6.5     | 29.0    | 27.1         |
+| YOLO       | Embedding (50) | 32.6       | 14.8    | 28.9    | 30.5         |
+| YOLO       | Embedding (20) | 34.6       | 15.0    | 31.5    | 28.0         |
+| YOLO-BN    | Embedding (20) | 38.6       | 17.4    | 34.3    |              |
+| YOLO-BN-DA | Embedding (20) | 42.3       | 20.8    | 36.9    |              |
+| Others     |                |            |         |         |              |
+| SDS        | -              | 49.7       | -       | 41.4    | 48K          |
+| MNC        | -              | 63.5       | 41.5    | -       | 360          |
 
 #### 3. Qualitative results
 
