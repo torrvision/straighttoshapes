@@ -22,7 +22,7 @@ Different network architectures are minimizing proxy L2-regression loss over out
 
 ##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
  
-| Archi.| Shape space |Acc. (mAP)||| Runtime (ms)| 
+| Archi.| Shape space |Acc. (mAP)|----|----| Runtime (ms)| 
 | ------------- |------------- |:-------:|------|------|:------:| 
 |              |             | mAP@0.5 | mAP@0.7 | mAP vol |          |
 | **Ours** | | | | | |
@@ -36,102 +36,6 @@ Different network architectures are minimizing proxy L2-regression loss over out
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | - | 49.7 | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
-<table class="tg">
-  <tr>
-    <th class="tg-yw4l">Archi.</th>
-    <th class="tg-yw4l">Shape space<br></th>
-    <th class="tg-yw4l" colspan="3">Acc. (mAP)<br></th>
-    <th class="tg-yw4l">Runtime (ms)<br></th>
-  </tr>
-  <tr>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l">mAP@0.5<br></td>
-    <td class="tg-yw4l">mAP@0.7</td>
-    <td class="tg-yw4l">mAP vol<br></td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Ours</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO</td>
-    <td class="tg-yw4l">Binary mask<br></td>
-    <td class="tg-yw4l">32.3</td>
-    <td class="tg-yw4l">12.0</td>
-    <td class="tg-yw4l">28.6</td>
-    <td class="tg-yw4l">26.3</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO</td>
-    <td class="tg-yw4l">Radial<br></td>
-    <td class="tg-yw4l">30.0<br></td>
-    <td class="tg-yw4l">6.5</td>
-    <td class="tg-yw4l">29.0</td>
-    <td class="tg-yw4l">27.1</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO</td>
-    <td class="tg-yw4l">Embedding (50)<br></td>
-    <td class="tg-yw4l">32.6</td>
-    <td class="tg-yw4l">14.8</td>
-    <td class="tg-yw4l">28.9</td>
-    <td class="tg-yw4l">30.5</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO</td>
-    <td class="tg-yw4l">Embedding (20)<br></td>
-    <td class="tg-yw4l">34.6</td>
-    <td class="tg-yw4l">15.0</td>
-    <td class="tg-yw4l">31.5<br></td>
-    <td class="tg-yw4l">28.0</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO-BN</td>
-    <td class="tg-yw4l">Embedding (20)<br></td>
-    <td class="tg-yw4l">38.6</td>
-    <td class="tg-yw4l">17.4</td>
-    <td class="tg-yw4l">34.3</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">YOLO-BN-DA</td>
-    <td class="tg-yw4l">Embedding (20)<br></td>
-    <td class="tg-yw4l">42.3</td>
-    <td class="tg-yw4l">20.8</td>
-    <td class="tg-yw4l">36.9</td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">Others</td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-    <td class="tg-yw4l"></td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">SDS</td>
-    <td class="tg-yw4l">-</td>
-    <td class="tg-yw4l">49.7</td>
-    <td class="tg-yw4l">-</td>
-    <td class="tg-yw4l">41.4</td>
-    <td class="tg-yw4l">48K</td>
-  </tr>
-  <tr>
-    <td class="tg-yw4l">MNC</td>
-    <td class="tg-yw4l">-</td>
-    <td class="tg-yw4l">63.5</td>
-    <td class="tg-yw4l">41.5</td>
-    <td class="tg-yw4l">-</td>
-    <td class="tg-yw4l">360</td>
-  </tr>
-</table>
 
 #### 3. Qualitative results
 
