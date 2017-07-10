@@ -42,6 +42,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 (a) Correct predictions using downsampled binary masks [YOLO-binarymask].
 (b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction) [YOLO-embedding20].
 (c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table) [YOLO-embedding20].
+
 <img src=instancesegmentation.png width='700'>
 
 
