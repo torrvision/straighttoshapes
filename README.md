@@ -38,7 +38,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
 
 #### 3. Qualitative results
-<img src=instancesegmentation.png width='500'>
+<img src=instancesegmentation.png width='700'>
 
 #### Zero-shot segmentation
 
