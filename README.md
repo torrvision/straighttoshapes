@@ -17,8 +17,7 @@ Proposed top-down regression to object shape masks through a semantically define
 
 #### Instance segmentation 
 ##### 1. Convergence plots of mAP scores @ 0.5 IoU 
-mAP estimates over 2000 randomly selected train and val images as network architectures minimize proxy L2-regression loss over output set of {shape, bounding-box, class-probabilities}. We use SBD annotations and the std. train/val divide for the PASCAL-VOC dataset. 
-
+mAP estimates over 2000 randomly selected train and val images from SBD dataset as network architectures minimize proxy L2-regression loss over output set of {shape, bounding-box, class-probabilities}. 
 [BN: using Batch normalization, DA: using stronger Data augmentation].
 <img src=mAP.png width='700'>
 
