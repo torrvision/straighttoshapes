@@ -36,6 +36,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | **Others** |                |      |             |        |      |
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | -   | 49.7   | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
+
 \* These present the computational time of the entire application (including display and wait time for the user) not just the feed-forward prediction.
 
 #### 3. Qualitative results
