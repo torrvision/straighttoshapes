@@ -36,8 +36,6 @@ Different network architectures are minimizing proxy L2-regression loss over out
 | [SDS](https://arxiv.org/pdf/1407.1808.pdf) | - | 49.7 | - | 41.4 | 48K |
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
-
-
 <table class="tg">
   <tr>
     <th class="tg-yw4l">Archi.</th>
@@ -54,7 +52,7 @@ Different network architectures are minimizing proxy L2-regression loss over out
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-9hbo">Ours</td>
+    <td class="tg-yw4l">Ours</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -110,7 +108,7 @@ Different network architectures are minimizing proxy L2-regression loss over out
     <td class="tg-yw4l"></td>
   </tr>
   <tr>
-    <td class="tg-9hbo">Others</td>
+    <td class="tg-yw4l">Others</td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
     <td class="tg-yw4l"></td>
@@ -134,7 +132,6 @@ Different network architectures are minimizing proxy L2-regression loss over out
     <td class="tg-yw4l">360</td>
   </tr>
 </table>
-
 
 #### 3. Qualitative results
 
