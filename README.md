@@ -65,7 +65,7 @@ In the lower rows, the instance segmentation approach of (b) fails to predict an
 
 
 ### Acknowledgements
-This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg). Additional experiments with batch normalization, data augmentation and resnet architecture have been contributed by Laurynas Miksys.
+This version of the *StraightToShapes* concept was implemented by [Saumya Jetley](http://saumya-jetley.github.io/) and [Michael Sapienza](http://sites.google.com/site/mikesapi) and [Stuart Golodetz](http://research.gxstudios.net/), under the supervision of [Professor Philip Torr](http://www.robots.ox.ac.uk/~tvg). Additional experiments with batch normalization, data augmentation have been contributed by [Laurynas Miksys](https://www.linkedin.com/in/laurynasmiksys/).
 
 It is built on top of [Darknet](https://github.com/pjreddie/darknet), an open-source neural network framework developed by [Joseph Redmon](http://pjreddie.com/).
 
