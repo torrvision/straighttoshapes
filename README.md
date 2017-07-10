@@ -39,11 +39,9 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
 
 #### 3. Qualitative results
-(a) Correct predictions using downsampled binary masks
-
-(b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction) 
-
-(c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table).
+(a) Correct predictions using downsampled binary masks [YOLO-binarymask].
+(b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction) [YOLO-embedding20].
+(c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table) [YOLO-embedding20].
 <img src=instancesegmentation.png width='700'>
 
 
@@ -59,6 +57,10 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | YOLO-BN-DA | Embedding (20) |             |               |               |
 
 #### 2. Qualitative results
+A comparison between the state-of-the-art \textbf{(a)} semantic segmentation~\cite{arnab2016higher}, \textbf{(b)} instance segmentation~\cite{Arnab2016}, and \textbf{(c)} our shape detection results, on images from YouTube videos of animals that are not present in the \pascal\ training set.
+    In the first two rows, instance segmentation predicts that the legs of the tiger are human. Our method is more consistent over the tiger images taken from the same video.
+    In the lower rows, the instance segmentation approach \textbf{(b)} fails to predict any segments, whilst our method predicts class `dog' for the tiger, hedgehog, baby elephant and bear,
+    and class `horse' for the large elephant.
 <img src=ZSLcomparisonToStateOfTheArt.png width='700'>
 
 
