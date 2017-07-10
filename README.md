@@ -73,11 +73,12 @@ If you build on this framework for your research, please consider citing the ori
   url       = {http://arxiv.org/abs/1611.07932},
 }
 ```
-----
+------------------
 ### Installation Guide
 To install the software, follow the instructions provided [HERE](INSTALL.md).
-------------------
 
+------------------
+### License
 This work is protected by the following license agreement: [License](LICENSE.md)
 
 
