@@ -22,7 +22,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 [BN: using Batch normalization, DA: using stronger Data augmentation].
 <img src=mAP.png width='700'>
 
-##### 2. Quantitative results presenting Mean-Avg.-Precision at different IoUs. 
+##### 2. Quantitative results presenting mAP scores at different IoUs. 
  
 | Archi.     | Shape space |mAP@0.5|mAP@0.7|mAP vol| Runtime (ms)| 
 | -----      |------------ |:-------:|:-----------:|:------:|:------:| 
@@ -38,6 +38,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | -  | 63.5   | 41.5 | - | 360 |
 
 #### 3. Qualitative results
+(a) Correct predictions using downsampled binary masks; (b) Correct predictions using 20D learnt shape encodings(in column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction); (c) Missed detections using the 20D shape encodings (the network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table).
 <img src=instancesegmentation.png width='700'>
 
 - *Zero-shot segmentation*
@@ -51,7 +52,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | YOLO-BN-DA | Embedding (20) |             |               |               |
 
 #### 2. Qualitative results
-
+<img src=ZSLcomparisonToStateOfTheArt.png width='700'>
 ----
 
 ### Acknowledgements
