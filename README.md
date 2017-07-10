@@ -37,13 +37,7 @@ Different network architectures are minimizing proxy L2-regression loss over out
 | [MNC](https://arxiv.org/pdf/1512.04412.pdf) | - | 63.5 | 41.5 | - | 360 |
 
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
-.tg .tg-yw4l{vertical-align:top}
-.tg .tg-9hbo{font-weight:bold;vertical-align:top}
-</style>
+
 <table class="tg">
   <tr>
     <th class="tg-yw4l">Archi.</th>
