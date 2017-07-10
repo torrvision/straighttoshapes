@@ -58,10 +58,9 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 | YOLO-BN-DA | Embedding (20) |             |               |               |
 
 #### 2. Qualitative results
-A comparison between the state-of-the-art \textbf{(a)} semantic segmentation~\cite{arnab2016higher}, \textbf{(b)} instance segmentation~\cite{Arnab2016}, and \textbf{(c)} our shape detection results, on images from YouTube videos of animals that are not present in the \pascal\ training set.
-    In the first two rows, instance segmentation predicts that the legs of the tiger are human. Our method is more consistent over the tiger images taken from the same video.
-    In the lower rows, the instance segmentation approach \textbf{(b)} fails to predict any segments, whilst our method predicts class `dog' for the tiger, hedgehog, baby elephant and bear,
-    and class `horse' for the large elephant.
+A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results, on images from YouTube videos of animals that are not present in the PASCAL training set.
+In the first two rows, instance segmentation predicts that the legs of the tiger are human. Our method is more consistent over the tiger images taken from the same video.
+In the lower rows, the instance segmentation approach of (b) fails to predict any segments, whilst our method predicts class `dog' for the tiger, hedgehog, baby elephant and bear, and class `horse' for the large elephant.
 <img src=ZSLcomparisonToStateOfTheArt.png width='700'>
 
 
