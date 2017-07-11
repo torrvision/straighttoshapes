@@ -51,13 +51,11 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 - **Zero-shot segmentation**
 
 ##### 1. Quantitative results
-The following evaluation has been performed on 8037 images from the COCO (80 categories) val set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
+The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
  
 | Archi.| Shape space         |mAP@0.5 (all)|mAP@0.7 (large)|mAP vol (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
-| YOLO   | Embedding (20)     | 34.6        | 15.0          | 31.5          |
-| YOLO-BN| Embedding (20)     |             |               |               |
-| YOLO-BN-DA | Embedding (20) |             |               |               |
+| YOLO   | Embedding (50)     | 34.6        | 15.0          | 31.5          |
 
 #### 2. Qualitative results
 A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results using YOLO-embedding20, on images from YouTube videos of animals that are not present in the PASCAL training set.<br/>
