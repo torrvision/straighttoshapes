@@ -51,7 +51,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 - **Zero-shot segmentation**
 
 ##### 1. Quantitative results
-The following evaluation has been performed on 8037 images from the COCO (80 categories) val set which have objects from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
+The following evaluation has been performed on 8037 images from the COCO (80 categories) val set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
  
 | Archi.| Shape space         |mAP@0.5 (all)|mAP@0.7 (large)|mAP vol (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
