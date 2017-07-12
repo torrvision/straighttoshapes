@@ -58,7 +58,7 @@ The following evaluation has been performed on 8037 images from the COCO (80 cat
 | YOLO   | Embedding (50)     | 34.6        | 15.0          | 31.5          |
 
 #### 2. Qualitative results
-A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results using YOLO-embedding20, on images from YouTube videos of animals that are not present in the PASCAL training set.<br/>
+A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results using YOLO-embedding50, on images from YouTube videos of animals that are not present in the PASCAL training set.<br/>
 In the first two rows, instance segmentation predicts that the legs of the tiger are human. Our method is more consistent over the tiger images taken from the same video.<br/>
 In the lower rows, the instance segmentation approach of (b) fails to predict any segments, whilst our method predicts class 'dog' for the tiger, hedgehog, baby elephant and bear, and class 'horse' for the large elephant.
 
