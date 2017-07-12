@@ -53,7 +53,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 ##### 1. Quantitative results
 The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
  
-| Archi.| Shape space         |mAP@0.5 (all)|mAP@0.7 (large)|mAP vol (large)|
+| Archi.| Shape space         |mAP@0.5 (all)|mAP@0.5 (large)|AR@0.5 (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
 | YOLO   | Embedding (50)     | 34.6        | 15.0          | 31.5          |
 
