@@ -55,7 +55,7 @@ The following evaluation has been performed on 8037 images from the COCO (80 cat
  
 | Archi.| Shape space         |mAP@0.5 (all)|mAP@0.5 (large)|AR@0.5 (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
-| YOLO   | Embedding (50)     | 34.6        | 15.0          | 31.5          |
+| YOLO   | Embedding (50)     | 3.6       | 7.1          | 23.2          |
 
 #### 2. Qualitative results
 A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results using YOLO-embedding50, on images from YouTube videos of animals that are not present in the PASCAL training set.<br/>
