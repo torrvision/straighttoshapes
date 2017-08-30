@@ -16,7 +16,7 @@ Proposed top-down regression to object shape masks through a semantically define
 ### Results
 
 
-#### **Instance segmentation**
+#### **--Instance segmentation--**
 
 ##### 1. Convergence plots of mAP scores @ 0.5 IoU 
 mAP estimates over 2000 randomly selected train and val images from SBD dataset as network architectures minimize proxy L2-regression loss over output set of {shape params, bounding-box params, class-probabilities}.<br/>
@@ -40,7 +40,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 
 \* These present the computational time of the entire application (including display and wait time for the user) not just the feed-forward prediction on a high-end desktop with a Titan-X processor (GMT 200) using CUDNN version 5.0.0.
 
-#### 3. Qualitative results
+##### 3. Qualitative results
 (a) Correct predictions using downsampled binary masks [YOLO-binarymask].<br/>
 (b) Correct predictions using 20D learnt shape encodings [YOLO-embedding20]. In column-3, the horns of the cow are missed and the human shape mask gets elongated due to an incorrect bounding box prediction.<br/>
 (c) Missed detections using the 20D shape encodings [YOLO-embedding20]. The network misses out or false fires on small objects in column-2, the dogs in the images are falsely categorised as cats, and the sofa incorrectly includes the nearby dining table.<br/>
@@ -48,10 +48,9 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 <img src=instancesegmentation.png width='700'>
 
 
-####
 
 
-#### **Zero-shot segmentation**
+#### **--Zero-shot segmentation--**
 
 ##### 1. Quantitative results
 The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset. The code to run this evalulation experiment is a modification over the coco-evaluation (matlab) code and can be found [here](https://github.com/saumya-jetley/ZeroShotSeg_cocomAPI).
@@ -60,7 +59,7 @@ The following evaluation has been performed on 8037 images from the COCO (80 cat
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
 | YOLO   | Embedding (50)     | 3.6       | 7.1          | 23.2          |
 
-#### 2. Qualitative results
+##### 2. Qualitative results
 A comparison between the state-of-the-art (a) [semantic segmentation](https://arxiv.org/pdf/1511.08119.pdf), (b) [instance segmentation](https://arxiv.org/abs/1609.02583), and (c) our shape detection results using YOLO-embedding50, on images from YouTube videos of animals that are not present in the PASCAL training set.<br/>
 In the first two rows, instance segmentation predicts that the legs of the tiger are human. Our method is more consistent over the tiger images taken from the same video.<br/>
 In the lower rows, the instance segmentation approach of (b) fails to predict any segments, whilst our method predicts class 'dog' for the tiger, hedgehog, baby elephant and bear, and class 'horse' for the large elephant.
