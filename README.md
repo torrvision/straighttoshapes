@@ -53,7 +53,7 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 #### **--Zero-shot segmentation--**
 
 ##### 1. Quantitative results
-The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset. The code to run this evalulation experiment is a modification over the coco-evaluation (matlab) code and can be found [here](https://github.com/saumya-jetley/ZeroShotSeg_cocomAPI).
+The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset. The code to run this evaluation experiment is a modification over the COCO-evaluation (matlab) benchmark code and can be found [here](https://github.com/saumya-jetley/ZeroShotSeg_cocomAPI).
  
 | Archi.| Shape space         |mAP@0.5 (all)|mAP@0.5 (large)|AR@0.5 (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
