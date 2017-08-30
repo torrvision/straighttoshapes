@@ -16,7 +16,8 @@ Proposed top-down regression to object shape masks through a semantically define
 ### Results
 
 
-- **Instance segmentation**
+#### **Instance segmentation**
+
 ##### 1. Convergence plots of mAP scores @ 0.5 IoU 
 mAP estimates over 2000 randomly selected train and val images from SBD dataset as network architectures minimize proxy L2-regression loss over output set of {shape params, bounding-box params, class-probabilities}.<br/>
 [BN: using Batch normalization, DA: using stronger Data augmentation].
@@ -48,10 +49,10 @@ mAP estimates over 2000 randomly selected train and val images from SBD dataset 
 
 
 
-- **Zero-shot segmentation**
+#### **Zero-shot segmentation**
 
 ##### 1. Quantitative results
-The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset.
+The following evaluation has been performed on 8037 images from the COCO (80 categories) val set using our embedding (50) model trained on train+val SBD set. These images have objects strictly from the 60 categories that are not in common with PASCAL-VOC (20 categories) dataset. The code to run this evalulation experiment is a modification over the coco-evaluation (matlab) code and can be found [here](https://github.com/saumya-jetley/ZeroShotSeg_cocomAPI).
  
 | Archi.| Shape space         |mAP@0.5 (all)|mAP@0.5 (large)|AR@0.5 (large)|
 | ------|---------------------|:-----------:|:-------------:|:-------------:|
